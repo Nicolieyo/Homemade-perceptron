@@ -1,0 +1,56 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ffe6f0, #fff);
+}
+
+/* title */
+h1 {
+  font-family: 'Pacifico';
+  color: #fd88c3;
+  font-size: 36px;
+}
+
+/* the whole grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(4, 70px);
+  gap: 8px;
+  justify-content: center;
+  margin: 25px auto;
+}
+
+/* just the squares */
+.cell {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  border: 2px solid #ff99cc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cell.active {
+  background: linear-gradient(145deg, #ff66b2, #ff99cc);
+
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  margin: 6px;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #ff66b2, #ff99cc);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
